@@ -12,9 +12,10 @@ $global-large-gutter                  : 40px !default;
 $global-small-margin                  : $global-small-gutter !default;
 $global-medium-margin                 : $global-medium-gutter !default;
 $global-large-margin                  : $global-large-gutter !default;
-$global-font-family                   : Roboto;
-$customized-base-heading-font-family  : 'Press Start 2P';
-// $base-body-font-family                :
+$margin-large-margin                  : 60px;
+$margin-large-margin-l                : 60px;
+$global-font-family                   : Montserrat;
+$customized-base-heading-font-family  : Poppins;
 
 
 // FONT HEADING SIZE
@@ -23,8 +24,11 @@ $global-xxlarge-font-size             : 4.5em;
 
 
 // BUTTON SETTING
-$button-default-background             : #fff700;
-$button-primary-background             : #fff700;
+$button-default-background             : #303030;
+$button-primary-background             : #303030;
+$button-default-color                  : #fff;
+$button-default-hover-color            : #fff;
+$button-font-size                      : 0.875em;
 // GRID
 // HORIZONTAL base
 $grid-gutter-horizontal               : $global-gutter !default;
@@ -58,6 +62,13 @@ $breadcrumb-divider-color             : inherit !default;
 // CODE
 $base-code-font-size                  : inherit !default;
 $base-code-color                      : inherit !default;
+
+// CARD
+$card-body-padding-horizontal         : 0;
+$card-body-padding-horizontal-l       : 0;
+$card-body-padding-vertical           : 0;
+$card-body-padding-vertical-l         : 0;
+$card-title-font-size                 : 1.3rem;
 
 // FORM
 $form-background                      : transparent !default;

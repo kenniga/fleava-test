@@ -1,0 +1,32 @@
+*:focus {
+    outline: 0;
+}
+.fleava__footer {
+    background: black;
+    color: white;
+    font-size: 0.75em;
+
+    &-logo {
+        width: 50%;
+    }
+    h4 {
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+    p {
+        line-height: 2;
+    }
+    .uk-list {
+        a:link,
+        a:visited {
+            color: white;
+        }
+    }
+    .uk-input {
+        border-bottom: 1px solid white;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

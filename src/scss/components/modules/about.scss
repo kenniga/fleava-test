@@ -1,15 +1,11 @@
-.smrtrme__speakers {
+.fleava__about {
     &-main-heading {
         font-family: $customized-base-heading-font-family;
-        font-size: 80px;
         text-transform: uppercase;
-        color: #353537;
-        margin-bottom: 70px;
-        i {
-            color: rgba(246, 209, 0, 0.5);
-            z-index: -1;
-            transform: rotate(4deg) translate(-41%, -43%) scale(1.5);
-        }
+        line-height: 1.2;
+        font-weight: 700;
+        font-size: 120px;
+        letter-spacing: 20px;
     }
     &-contents {
         h3 {

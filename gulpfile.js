@@ -11,7 +11,9 @@ var sassPaths = [
 ];
 var jsPaths = [
   'node_modules/uikit/dist/js/uikit.js',
-  'node_modules/uikit/dist/js/uikit-icons.js'
+  'node_modules/uikit/dist/js/uikit-icons.js',
+  'node_modules/flickity/dist/flickity.pkgd.js'
+
 ];
 
 gulp.task('sass', function() {

@@ -1,0 +1,71 @@
+.fleava__slider {
+    padding-left: 0;
+    padding-right: 0;
+    @media (min-width: $breakpoint-medium) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    &-background {
+        background: #0076fe;
+        border-radius: 7px;
+    }
+    .main-carousel {
+        overflow-x: hidden;
+        .carousel-cell {
+            width: 28%;
+            margin-right: 20px;
+            img {
+                width: 100%;
+                height: 66vh;
+                object-fit: cover;
+                @media (min-width: $breakpoint-medium) {
+                    width: 100%;
+                    height: 50vh
+                }
+            }
+            @media (min-width: $breakpoint-medium) {
+                width: 100%;
+                margin-right: 50px;
+            }
+        }
+    }
+    .flickity-page-dots {
+        bottom: 0px;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20px;
+        margin-top: 30px;
+    }
+    .flickity-page-dots .dot {
+        width: 15px;
+        height: 15px;
+        opacity: 1;
+        background: transparent;
+        cursor: pointer;
+        margin-right: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 420ms;
+        z-index: 9;
+        &:before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: white;
+            opacity: .75;
+            display: block;
+            border-radius: 100%;
+            transition: 420ms;
+            &:hover {
+                opacity: 1;
+            }
+        }
+        &.is-selected:before {
+            width: 15px;
+            height: 15px;
+        }
+    }
+}

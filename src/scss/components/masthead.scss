@@ -1,11 +1,31 @@
-.smrtrme__masthead {
-    &-subtitle {
-        font-family: $customized-base-heading-font-family;
-        color: #FF8700 !important;
+.fleava__masthead {
+    z-index: 9;
+    &-logo {
+        width: 33%;
     }
+    .uk-navbar-nav {
+        > li > a {
+            color: white;
+            font-size: 0.875em;
+            &.fleava__masthead-contact-button {
+                border: 2px solid white;
+                padding: 0 20px;
+                align-items: center;
+                height: 40px;
+                margin: 20px 0;
+                justify-content: center;
+                margin-left: 20px;
+            }
+        }
+    }
+
     &-main-headline {
-        // font-family: $global-font-family;
+        font-family: $customized-base-heading-font-family;
+        text-transform: uppercase;
         font-weight: 700;
+        font-size: 120px;
+        letter-spacing: 20px;
+
     }
     &-scroll-section {
         svg {
@@ -26,7 +46,8 @@
     }
     .k {
         &-scroll-section {
-            background: #fc8603;
+            font-family: $customized-base-heading-font-family;
+            background: #0076fe;
             color: white;
             line-height: 1;
             padding: 20px 30px;
