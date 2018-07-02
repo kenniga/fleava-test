@@ -3,11 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Journey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Poppins:500,600" rel="stylesheet">
         <link rel="stylesheet" href="dist/css/app.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     </head>
     <body>
+        <!-- NAVBAR START -->
         <header class="uk-position-top fleava__masthead">
             <div class="uk-position-relative">
                 <div class="uk-position-top uk-padding uk-padding-remove-vertical">
@@ -18,40 +20,46 @@
                             </a>
                         </div>
                         <div class="uk-navbar-right">
-                            <ul class="uk-navbar-nav">
+                            <ul class="uk-navbar-nav uk-visible@l">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">About Us</a></li>
                                 <li><a href="#">Our Work</a></li>
                                 <li><a href="#">Latest News</a></li>
                                 <li><a href="#" class="fleava__masthead-contact-button">Say Hello</a></li>
                             </ul>
+                            <a class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle href="#navbar_mobile"></a>
                         </div>
                     </nav>
                 </div>
             </div>
         </header>
-        <div class="content fleava__masthead-content">
-            <div class="uk-cover-container" uk-height-viewport>
-                <div class="uk-overlay-primary uk-blend-lighten uk-position-cover" style="    background: rgb(0, 0, 0); background: linear-gradient(180deg, rgb(255, 255, 255) 25%, rgba(0, 0, 0, 0.5046393557422969) 100%);"></div>
+        <!-- NAVBAR FINISH -->
+        <div class="content">
+            <!-- ABOVE THE FOLD / MASTHEAD SECTION START -->
+            <div class="fleava__masthead-content uk-cover-container" uk-height-viewport>
+                <img src="dist/img/masthead.jpeg" alt="">
+                <div class="uk-overlay-primary uk-blend-lighten uk-position-cover" style="background: rgb(0, 0, 0); background: linear-gradient(180deg, rgb(255, 255, 255) 25%, rgba(0, 0, 0, 0.5046393557422969) 100%);"></div>
                 <div class="uk-overlay-primary uk-position-cover">
-                    <div class="uk-container">
-                        <div class="uk-flex-center uk-flex-middle" uk-grid  uk-height-viewport>
+                    <div class="uk-container uk-container-expand">
+                        <div class="uk-flex-center uk-flex-middle uk-flex-middle@m" uk-grid  uk-height-viewport>
                             <div class="uk-width-3-4@m">
                                 <h1 class="fleava__masthead-main-headline">Plan the journey ahead</h1>
                                 <a href="#about" uk-scroll class="uk-button uk-button-default k-scroll-section uk-margin-medium">View Projects</a>
-                                <!-- <a href="#about" class="uk-icon-link" uk-scroll uk-icon="icon:chevron-down;ratio:2;"></a> -->
+                                <a href="#about" class="uk-icon-link uk-display-block" uk-scroll uk-icon="icon:chevron-down;ratio:2;"></a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- ABOVE THE FOLD / MASTHEAD SECTION FINISH -->
             </div>
+            <!-- ABOUT SECTION START -->
             <div class="uk-container uk-container-expand fleava__about" id="about">
                 <div class="uk-margin-large-top uk-margin-large-bottom uk-flex-center" uk-grid>
-                    <div class="uk-width-3-5@m">
+                    <div class="uk-width-3-4@m">
                         <h2 class="fleava__about-main-heading uk-margin-large">
                             Make This Happen
                         </h2>
-                        <div class="uk-child-width-3-5@m uk-flex-center uk-grid-large uk-margin" uk-grid>
+                        <div class="uk-child-width-3-4@m uk-flex-center uk-grid-large uk-margin" uk-grid>
                             <p>
                               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium laboriosam reiciendis reprehenderit ex consequatur hic. Cum omnis vitae officia voluptates soluta voluptas magnam ratione quae dolorum, commodi similique, tenetur quasi.
                             </p>
@@ -68,27 +76,31 @@
                 </div>
 
             </div>
+            <!-- ABOUT SECTION FINISH -->
+            <!-- SLIDER SECTION START -->
             <div class="uk-container uk-container-expand uk-margin-xlarge-bottom fleava__slider">
                 <div class="uk-margin-large-top uk-flex-center uk-position-relative" uk-grid>
-                    <div class="uk-overlay uk-position-absolute uk-width-3-5@m uk-height-1-1">
-                        <div class="fleava__slider-background uk-width-1-1 uk-height-1-1"></div>
+                    <div class="uk-overlay uk-position-absolute uk-width-3-4@m uk-height-1-1 fleava__slider-background ">
+                        <div class="uk-width-1-1 uk-height-1-1"></div>
                     </div>
                     <div class="uk-width-1-1@m">
-                        <div class="main-carousel uk-width-1-1@m uk-margin-xlarge-top uk-margin-medium-bottom" data-flickity='{ "prevNextButtons":false,"wrapAround": true}'>
+                        <div class="main-carousel uk-width-1-1@m uk-margin-xlarge-top uk-margin-medium-bottom" data-flickity='{ "prevNextButtons":false,"wrapAround": true, "imagesLoaded": true}'>
                             <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/1.jpeg" alt=""></div>
-                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/1.jpeg" alt=""></div>
-                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/1.jpeg" alt=""></div>
-                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/1.jpeg" alt=""></div>
-                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/1.jpeg" alt=""></div>
-                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/1.jpeg" alt=""></div>
+                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/2.jpeg" alt=""></div>
+                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/3.jpeg" alt=""></div>
+                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/4.jpeg" alt=""></div>
+                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/5.jpeg" alt=""></div>
+                            <div class="carousel-cell uk-box-shadow-medium"><img src="dist/img/6.jpeg" alt=""></div>
                         </div>
                     </div>
                 </div>
 
             </div>
+            <!-- SLIDER SECTION FINISH -->
+            <!-- TWITTER SECTION START -->
             <div class="uk-container uk-container-expand fleava__twitter">
                 <div class="uk-margin-large-top uk-margin-large-bottom uk-flex-center" uk-grid>
-                    <div class="uk-width-3-5@m">
+                    <div class="uk-width-3-4@m">
                         <div class="uk-padding-large uk-padding-remove-horizontal">
                             <i uk-icon="icon:twitter;ratio:2;"></i>
                             <div class="uk-width-3-4@m">
@@ -102,14 +114,16 @@
                 </div>
 
             </div>
+            <!-- TWITTER SECTION FINISH -->
+            <!-- BLOG SECTION START -->
             <div class="uk-container uk-container-expand fleava__blogs">
                 <div class="uk-margin-xlarge-top uk-margin-xlarge-bottom uk-flex-center" uk-grid>
-                    <div class="uk-width-3-5@m">
+                    <div class="uk-width-3-4@m">
                         <div class="uk-child-width-1-3@m uk-text-center" uk-grid>
                             <div>
                                 <a href="#" class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img src="dist/img/1.jpeg" alt="">
+                                        <img src="dist/img/5.jpeg" alt="">
                                     </div>
                                     <div class="uk-card-body">
                                         <span class="fleava__blogs-meta">29th October 2017</span>
@@ -121,7 +135,7 @@
                             <div>
                                 <a href="#" class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img src="dist/img/1.jpeg" alt="">
+                                        <img src="dist/img/4.jpeg" alt="">
                                     </div>
                                     <div class="uk-card-body">
                                         <span class="fleava__blogs-meta">21th October 2017</span>
@@ -133,7 +147,7 @@
                             <div>
                                 <a href="#" class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
-                                        <img src="dist/img/1.jpeg" alt="">
+                                        <img src="dist/img/3.jpeg" alt="">
                                     </div>
                                     <div class="uk-card-body">
                                         <span class="fleava__blogs-meta">18th September 2017</span>
@@ -148,14 +162,15 @@
                 </div>
 
             </div>
+            <!-- BLOG SECTION FINISH -->
         </div>
-
+        <!-- FOOTER START -->
         <footer class="fleava__footer">
             <div class="uk-container uk-container-expand">
                 <div class="uk-margin-large-top uk-margin-large-bottom uk-flex-center" uk-grid>
-                    <div class="uk-width-3-5@m">
+                    <div class="uk-width-3-4@m">
                         <div>
-                            <div class="uk-padding-large uk-padding-remove-horizontal uk-flex uk-flex-between uk-grid-match" uk-grid>
+                            <div class="uk-padding-large uk-padding-remove-horizontal uk-flex uk-flex-between uk-grid-match uk-grid-large" uk-grid>
                                 <div class="uk-width-2-5@m">
                                     <div class="uk-position-relative">
                                         <a href="#">
@@ -171,7 +186,7 @@
                                 </div>
                                 <div class="uk-width-2-5@m">
                                     <div>
-                                        <div class="uk-child-width-1-2@m" uk-grid>
+                                        <div class="uk-child-width-1-2@m uk-grid-large" uk-grid>
                                             <div>
                                                 <h4>
                                                     Navigate
@@ -242,6 +257,21 @@
 
             </div>
         </footer>
+        <!-- FOOTER FINISH -->
+        <div class="uk-offcanvas-content uk-dark">
+            <div id="navbar_mobile" uk-offcanvas="overlay: true">
+                <div class="uk-offcanvas-bar uk-dark">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-nav uk-nav-default uk-margin-auto-vertical">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Work</a></li>
+                        <li><a href="#">Latest News</a></li>
+                        <li><a href="#" class="fleava__masthead-contact-button">Say Hello</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
     <script>
     </script>

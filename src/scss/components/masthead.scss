@@ -1,7 +1,15 @@
+// Used to customize fleava__masthead and inheritance
+
 .fleava__masthead {
-    z-index: 9;
+    z-index: 1;
+    &-content {
+        padding-top: 80px;
+    }
     &-logo {
         width: 33%;
+        @media (max-width: $breakpoint-medium) {
+            width: 50%;
+        }
     }
     .uk-navbar-nav {
         > li > a {
@@ -23,9 +31,16 @@
         font-family: $customized-base-heading-font-family;
         text-transform: uppercase;
         font-weight: 700;
-        font-size: 120px;
+        font-size: 12vmin;
         letter-spacing: 20px;
-
+        margin-top: 80px;
+        @media (max-width: $breakpoint-medium) {
+            line-height: 2;
+            letter-spacing: 5px;
+            + .uk-margin-medium {
+                margin-top: 10px !important;
+            }
+        }
     }
     &-scroll-section {
         svg {

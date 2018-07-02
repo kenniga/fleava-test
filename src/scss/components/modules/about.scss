@@ -1,11 +1,21 @@
+// Used to customize fleava__about and inheritance
+
 .fleava__about {
+    .uk-margin-large-top {
+        @media (max-width: $breakpoint-medium) {
+            margin-top: 30px!important;
+        }
+    }
     &-main-heading {
         font-family: $customized-base-heading-font-family;
         text-transform: uppercase;
         line-height: 1.2;
         font-weight: 700;
-        font-size: 120px;
+        font-size: 12vmin;
         letter-spacing: 20px;
+        @media (max-width: $breakpoint-medium) {
+            margin-bottom: 20px!important;
+        }
     }
     &-contents {
         h3 {

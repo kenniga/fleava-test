@@ -1,13 +1,25 @@
+// Used to customize fleava__slider and inheritance
+
 .fleava__slider {
     padding-left: 0;
     padding-right: 0;
-    @media (min-width: $breakpoint-medium) {
-        padding-left: 30px;
-        padding-right: 30px;
+    .uk-overlay.uk-position-absolute {
+        padding: 0;
+    }
+    > .uk-margin-large-top {
+        @media (max-width: $breakpoint-medium) {
+            margin-top: 0!important;
+        }
     }
     &-background {
-        background: #0076fe;
-        border-radius: 7px;
+        padding: 0;
+        > div {
+            background: #0076fe;
+            border-radius: 7px;
+            @media (max-width: $breakpoint-medium) {
+                border-radius: 0;
+            }
+        }
     }
     .main-carousel {
         overflow-x: hidden;
@@ -18,14 +30,14 @@
                 width: 100%;
                 height: 66vh;
                 object-fit: cover;
-                @media (min-width: $breakpoint-medium) {
+                @media (max-width: $breakpoint-medium) {
                     width: 100%;
-                    height: 50vh
+                    height: 75vh
                 }
             }
-            @media (min-width: $breakpoint-medium) {
+            @media (max-width: $breakpoint-medium) {
                 width: 100%;
-                margin-right: 50px;
+                margin-right: 10px;
             }
         }
     }

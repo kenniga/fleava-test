@@ -5,7 +5,9 @@
     background: black;
     color: white;
     font-size: 0.75em;
-
+    > div > .uk-margin-large-top {
+        margin-top: 20px!important;
+    }
     &-logo {
         width: 50%;
     }
